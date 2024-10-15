@@ -18,7 +18,7 @@ namespace OOP_Homework_2
             password = ValidatePassword(a_password);
         }
 
-        private string ValidateEmail (string a_email)
+        public string ValidateEmail (string a_email)
         {
             if (string.IsNullOrWhiteSpace(a_email) == false && a_email.Contains("@") == true && a_email.EndsWith(".com") == true)
             {
@@ -30,7 +30,7 @@ namespace OOP_Homework_2
             }
         }
 
-        private string ValidatePassword (string a_password)
+        public string ValidatePassword (string a_password)
         {
             if (string.IsNullOrWhiteSpace(a_password) == false)
             {
